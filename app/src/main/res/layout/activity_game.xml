@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@drawable/background"
+    android:id="@+id/game_relativeLayoutId">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_instructions"
+        android:text="Tap to start the game"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/game_scoreImg"
+        android:src="@drawable/pumpkin"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_scoreTitle"
+        android:text="0"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@id/game_scoreImg"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/game_heroImg"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/hero"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_heart2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart1_full"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_heart1"
+        android:layout_toStartOf="@id/game_heart2"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart1_full"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_heart3"
+       android:layout_toEndOf="@id/game_heart2"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart1_full"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/game_reward1Img"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/pumpkin"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/game_reward2Img"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/game_reward1Img"
+        android:layout_margin="10dp"
+        android:src="@drawable/pumpkin"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/game_enemy1Img"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/game_reward2Img"
+        android:layout_margin="10dp"
+        android:src="@drawable/enemy_1"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/game_enemy2Img"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/game_enemy1Img"
+        android:layout_margin="10dp"
+        android:src="@drawable/enemy_2"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/game_enemy3Img"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/game_enemy2Img"
+        android:layout_margin="10dp"
+        android:src="@drawable/enemy_3"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
